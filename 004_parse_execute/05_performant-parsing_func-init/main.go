@@ -7,9 +7,11 @@ import (
 )
 
 var tpl *template.Template
+//package level so tpl is accessible everywhere
 
 func init() {
 	tpl = template.Must(template.ParseGlob("templates/*"))
+	//Must does the error checking and returns template
 }
 
 func main() {

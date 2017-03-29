@@ -30,6 +30,8 @@ var fm = template.FuncMap{
 	"ft": firstThree,
 }
 
+//FuncMap that takes a map[string]interface{}
+
 func init() {
 	tpl = template.Must(template.New("").Funcs(fm).ParseFiles("tpl.gohtml"))
 }

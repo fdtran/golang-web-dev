@@ -5,7 +5,8 @@ import (
 	"os"
 	"text/template"
 )
-
+//"go fmt ./..." formats all of the go code in directory
+//range in tpl.gohtml iterates over a slice and requires an {{end}}
 var tpl *template.Template
 
 func init() {

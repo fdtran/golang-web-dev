@@ -5,7 +5,7 @@ import (
 	"os"
 	"text/template"
 )
-
+// $variable in tpl.gohtml assigns a value to a variable which can be accessed anywhere with {{variable}} inside the template
 var tpl *template.Template
 
 func init() {
