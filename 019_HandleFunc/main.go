@@ -17,6 +17,6 @@ func main() {
 
 	http.HandleFunc("/dog", d)
 	http.HandleFunc("/cat", c)
-
+	http.HandleFunc("/", c)
 	http.ListenAndServe(":8080", nil)
 }

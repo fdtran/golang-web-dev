@@ -22,6 +22,7 @@ func main() {
 		}
 
 		io.WriteString(conn, "\nHello from TCP server\n")
+		//implements write interface, sends string 
 		fmt.Fprintln(conn, "How is your day?")
 		fmt.Fprintf(conn, "%v", "Well, I hope!")
 

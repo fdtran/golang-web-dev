@@ -10,6 +10,8 @@ import (
 
 func main() {
 	li, err := net.Listen("tcp", ":8080")
+	//asks for 2 strings, type and port
+	//returns listener and error
 	if err != nil {
 		log.Fatalln(err.Error())
 	}
@@ -17,6 +19,7 @@ func main() {
 
 	for {
 		conn, err := li.Accept()
+		//loop forever untill a conn comes through the listener
 		if err != nil {
 			log.Fatalln(err.Error())
 			continue
